@@ -1,3 +1,7 @@
+<script src="/static/trailblazer/js/jquery.elevateZoom.min.js" type="text/javascript"></script>
+<script src="/static/trailblazer/js/raphael-min.js" type="text/javascript"></script>
+<script src="/static/trailblazer/js/device.js" type="text/javascript"></script>
+
 <style>
   /*
        .canvas grid 10 and #photo-link image is at z-index of 5
@@ -545,7 +549,7 @@
       <div id="0" class="modal-body feedTutOne" style="display:none">
         <div class="modal-image">
           <img
-            src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-various-stained-images.jpg" />
+            src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-various-stained-images.jpg" />
         </div>
           <div class="modal-info">
             <h1>
@@ -562,7 +566,7 @@
 
       <div id="1" class="modal-body feedTutOne" style="display:none">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-various-stained-images.jpg" />
+          <img src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-various-stained-images.jpg" />
         </div>
         <div class="modal-info">
           <h1>
@@ -579,7 +583,7 @@
 
       <div id="2" class="modal-body feedTutOne" style="display:none">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-various-stained-images.jpg" />
+          <img src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-various-stained-images.jpg" />
         </div>
         <div class="modal-info">
           <h1>
@@ -605,7 +609,7 @@
       <!-- New feedback content -->
       <div id="0" class="modal-body feedTutTwo" style="display:none">
         <div class="modal-image">
-          <img src="http://citscitools.cancerresearchuk.org/static/img/mvp-01/tutorial/grid-red.jpg " />
+          <img src="/static/trailblazer/images/lung_egfr/tutorial/grid-red.jpg " />
         </div>
         <div class="modal-info">
           <h1>From now on <b>you only need to click on the sections that contain cancer</b>.</h1>
@@ -617,7 +621,7 @@
 
       <div id="1" class="modal-body feedTutTwo" style="display:none">
         <div class="modal-image">
-          <img src="http://citscitools.cancerresearchuk.org/static/img/mvp-01/tutorial/grid-red.jpg " />
+          <img src="/static/trailblazer/images/lung_egfr/tutorial/grid-red.jpg " />
         </div>
         <div class="modal-info">
           <h1>What if there are no cancer cells?</h1>
@@ -637,8 +641,8 @@
       <div id="0" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-18-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-18-cancer-outline.jpg"
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-18-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-18-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea0" class="modal-info">
@@ -665,8 +669,8 @@
       <div id="1" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-24-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-24-cancer-outline.jpg"
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-24-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-24-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea1" class="modal-info">
@@ -690,8 +694,8 @@
       <div id="2" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-22-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-22-cancer-outline.jpg"
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-22-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-22-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea2" class="modal-info">
@@ -710,8 +714,8 @@
       <div id="3" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-03.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-03.jpg"
+               src="/static/trailblazer/images/lung_egfr/EGFR-03.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/EGFR-03.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea3" class="modal-info">
@@ -729,8 +733,8 @@
       <div id="4" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-11-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-11-cancer-outline.jpg"
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-11-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-11-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea4" class="modal-info">
@@ -747,8 +751,8 @@
       <div id="5" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-25-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-25-cancer-outline.jpg"
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-25-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-25-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea5" class="modal-info">
@@ -761,8 +765,8 @@
       <div id="6" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-26-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-26-cancer-outline.jpg"
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-26-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-26-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea6" class="modal-info">
@@ -776,7 +780,7 @@
       <!-- STEP 3 INFO -->
       <!--<div id="6" class="modal-body" style="display:none">-->
         <!--<div class="modal-image">-->
-          <!--<img src="//citscitools.cancerresearchuk.org/static/img/mvp-01/tutorial/grid.jpg" />-->
+          <!--<img src="//citscitools.cancerresearchuk.org/static/trailblazer/images/lung_egfr/tutorial/grid.jpg" />-->
         <!--</div>-->
         <!--<div class="modal-info">-->
           <!--<h1>In the next set of practice images you need to mark the whole image and then we’ll let you know what our experts thought.</h1>-->
@@ -787,7 +791,7 @@
       <!-- SUMMARY -->
         <div id="19" class="modal-body">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-05-poor-quality-example.jpg" alt="" />
+          <img src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-05-poor-quality-example.jpg" alt="" />
         </div>
         <div class="modal-info">
           <h1>What if you can't analyse an image?</h1>
@@ -803,8 +807,7 @@
       <div id="20" class="modal-body">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/mechanic-cancer-yes-no-screenshot.jpg" alt="" />
-               <!-- data-zoom-image="//citscitools.cancerresearchuk.org/static/img/mvp-02/tutorial-images/@2x-min/26-cancer-outline@2x-min.png" -->
+               src="/static/trailblazer/images/lung_egfr/tutorial/mechanic-cancer-yes-no-screenshot.jpg" alt="" />
         </div>
         <div id="annotatedImageZoomArea6" class="modal-info">
           <h1>You are now about to <strong>start</strong> analysing cancer images.</h1>
@@ -823,8 +826,8 @@
       <div id="7" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-18-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-18-cancer-outline.jpg" alt="" />
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-18-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-18-cancer-outline.jpg" alt="" />
         </div>
         <div id="annotatedImageZoomArea7" class="modal-info">
           <h2>We’ve outlined the cancer cells in <b class="text-error">red</b></h2>
@@ -846,8 +849,8 @@
       <div id="8" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-24-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-24-cancer-outline.jpg"
+               src="http:/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-24-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-24-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea8" class="modal-info">
@@ -866,8 +869,8 @@
       <div id="9" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-15-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-15-cancer-outline.jpg"
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-15-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-15-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea9" class="modal-info">
@@ -886,8 +889,8 @@
       <div id="10" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-27-cancer-area.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/lung-egfr-gt-27-cancer-outline.jpg"
+               src="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-27-cancer-area.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/tutorial/lung-egfr-gt-27-cancer-outline.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea10" class="modal-info">
@@ -911,8 +914,8 @@
       <div id="11" class="modal-body" style="display:none">
         <div class="modal-image">
           <img class="annotatedImage"
-               src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-07.jpg"
-               data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-07.jpg"
+               src="/static/trailblazer/images/lung_egfr/EGFR-07.jpg"
+               data-zoom-image="/static/trailblazer/images/lung_egfr/EGFR-07.jpg"
                alt="" />
         </div>
         <div id="annotatedImageZoomArea11" class="modal-info">
@@ -938,7 +941,7 @@
     <div id="tutorialModal" class="modal hide ">
       <div id="0" class="modal-body" style="display:none">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/min/EGFR-15-min.jpg" alt="" />
+          <img src="/static/trailblazer/images/lung_egfr/min/EGFR-15-min.jpg" alt="" />
         </div>
         <div class="modal-info">
           <h1>
@@ -955,7 +958,7 @@
 
       <!--<div id="1" class="modal-body" style="display:none">-->
         <!--<div class="modal-image">-->
-          <!--<img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/village.jpg" alt="" />-->
+          <!--<img src="/static/trailblazer/images/lung_egfr/tutorial/village.jpg" alt="" />-->
         <!--</div>-->
         <!--<div class="modal-info">-->
           <!--<h1>-->
@@ -970,7 +973,7 @@
 
       <!--<div id="2" class="modal-body" style="display:none">-->
         <!--<div class="modal-image">-->
-          <!--<img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/towns.jpg" alt="" />-->
+          <!--<img src="/static/trailblazer/images/lung_egfr/tutorial/towns.jpg" alt="" />-->
         <!--</div>-->
         <!--<div class="modal-info">-->
           <!--<h1>-->
@@ -984,7 +987,7 @@
 
       <!--<div id="3" class="modal-body" style="display:none">-->
         <!--<div class="modal-image">-->
-          <!--<img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/tutorial/city.jpg" alt="" />-->
+          <!--<img src="/static/trailblazer/images/lung_egfr/tutorial/city.jpg" alt="" />-->
         <!--</div>-->
         <!--<div class="modal-info">-->
           <!--<h1>-->
@@ -1005,8 +1008,8 @@
             <div class="carousel-inner">
               <div class="item active">
                 <img class="tutorialZoom1"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/min/EGFR-15-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-15.jpg"
+                     src="/static/trailblazer/images/lung_egfr/min/EGFR-15-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/EGFR-15.jpg"
                      alt="" />
                 <div class="item-inner">
                   <h1>
@@ -1028,8 +1031,8 @@
               </div>
               <div class="item">
                 <img class="tutorialZoom1"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated-min/49-cancer-area-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated/49-cancer-outline.jpg"
+                     src="/static/trailblazer/images/lung_egfr/annotated-min/49-cancer-area-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/annotated/49-cancer-outline.jpg"
                      alt="" />
                 <div class="item-inner">
                   <h1>
@@ -1045,8 +1048,8 @@
               </div>
               <div class="item">
                 <img class="tutorialZoom1"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated-min/49-non-cancer-area-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated/49-non-cancer.jpg"
+                     src="/static/trailblazer/images/lung_egfr/annotated-min/49-non-cancer-area-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/annotated/49-non-cancer.jpg"
                      alt="" />
                 <div class="item-inner">
                   <h1>
@@ -1093,8 +1096,8 @@
             <div class="carousel-inner">
               <div class="active item">
                 <img class="tutorialZoom2"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/min/EGFR-11-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-11.jpg"
+                     src="/static/trailblazer/images/lung_egfr/min/EGFR-11-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/EGFR-11.jpg"
                      alt="" />
                 <div class="item-inner">
                   <h1>
@@ -1117,8 +1120,8 @@
               </div>
               <div class="item">
                 <img class="tutorialZoom2"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated-min/410-cancer-area-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated/410-cancer-outline.jpg"
+                     src="/static/trailblazer/images/lung_egfr/annotated-min/410-cancer-area-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/annotated/410-cancer-outline.jpg"
                      alt="" />
                 <div class="item-inner">
                   <h1>
@@ -1145,7 +1148,7 @@
 
       <!--<div id="6" class="modal-body" style="display:none">-->
       <!--<div class="modal-image">-->
-      <!--<img class="tutorialZoom6" src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated-min/17-non-cancer-area-min.jpg" data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated/17-non-cancer-outline.jpg" alt="" />-->
+      <!--<img class="tutorialZoom6" src="/static/trailblazer/images/lung_egfr/annotated-min/17-non-cancer-area-min.jpg" data-zoom-image="/static/trailblazer/images/lung_egfr/annotated/17-non-cancer-outline.jpg" alt="" />-->
       <!--</div>-->
       <!--<div class="modal-info">-->
       <!--<h1>-->
@@ -1184,8 +1187,8 @@
             <div class="carousel-inner">
               <div class="active item">
                 <img class="tutorialZoom3"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated-min/17-non-cancer-area-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated/17-non-cancer-outline.jpg"
+                     src="/static/trailblazer/images/lung_egfr/annotated-min/17-non-cancer-area-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/annotated/17-non-cancer-outline.jpg"
                      alt="" />
                 <div class="item-inner" style="display: block;">
                   <h1>
@@ -1230,8 +1233,8 @@
             <div class="carousel-inner">
               <div class="active item">
                 <img class="tutorialZoom4"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/min/EGFR-25-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-25.jpg"
+                     src="/static/trailblazer/images/lung_egfr/min/EGFR-25-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/EGFR-25.jpg"
                      alt="" />
                 <div class="item-inner">
                   <h1>
@@ -1250,8 +1253,8 @@
               </div>
               <div class="item">
                 <img class="tutorialZoom4"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated-min/61-cancer-area-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated/61-cancer-outline.jpg"
+                     src="/static/trailblazer/images/lung_egfr/annotated-min/61-cancer-area-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/annotated/61-cancer-outline.jpg"
                      alt="" />
                 <div class="item-inner">
                   <h1>
@@ -1270,8 +1273,8 @@
               </div>
               <div class="item">
                 <img class="tutorialZoom4"
-                     src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated-min/61-non-cancer-area-min.jpg"
-                     data-zoom-image="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/annotated/61-non-cancer-outline.jpg"
+                     src="/static/trailblazer/images/lung_egfr/annotated-min/61-non-cancer-area-min.jpg"
+                     data-zoom-image="/static/trailblazer/images/lung_egfr/annotated/61-non-cancer-outline.jpg"
                      alt="" />
                 <div class="item-inner">
                   <h1>
@@ -1306,7 +1309,7 @@
 
       <div id="5" class="modal-body" style="display:none">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/img/mvp-01/tutorial/grid.jpg" alt="" />
+          <img src="//citscitools.cancerresearchuk.org/static/trailblazer/images/lung_egfr/tutorial/grid.jpg" alt="" />
         </div>
         <div class="modal-info">
           <h1>
@@ -1326,7 +1329,7 @@
 
       <div id="6" class="modal-body" style="display:none">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/img/mvp-02/tutorial-images/hover-over.png   " alt="" />
+          <img src="/static/trailblazer/images/lung_egfr/tutorial/hover-over.png   " alt="" />
         </div>
         <div class="modal-info">
           <h1>Look closely at the cells in each section</h1>
@@ -1349,7 +1352,7 @@
 
       <div id="7" class="modal-body" style="display:none">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/img/mvp-01/tutorial/grid-red.jpg" alt="" />
+          <img src="//citscitools.cancerresearchuk.org/static/trailblazer/images/lung_egfr/tutorial/grid-red.jpg" alt="" />
         </div>
         <div class="modal-info">
           <h1>
@@ -1364,7 +1367,7 @@
 
       <div id="8" class="modal-body" style="display:none">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/img/mvp-01/tutorial/grid-red-green.jpg" alt="" />
+          <img src="//citscitools.cancerresearchuk.org/static/trailblazer/images/lung_egfr/tutorial/grid-red-green.jpg" alt="" />
         </div>
         <div class="modal-info">
           <h1>
@@ -1378,7 +1381,7 @@
 
       <div id="9" class="modal-body" style="display:none">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/img/mvp-01/tutorial/grid-red-green.jpg" alt="" />
+          <img src="//citscitools.cancerresearchuk.org/static/trailblazer/images/lung_egfr/tutorial/grid-red-green.jpg" alt="" />
         </div>
         <div class="modal-info">
           <h1>
@@ -1395,7 +1398,7 @@
 
       <div id="10" class="modal-body" style="display:none;">
         <div class="modal-image">
-          <img src="//citscitools.cancerresearchuk.org/static/img/mvp-01/tutorial/grid.jpg" alt="" />
+          <img src="//citscitools.cancerresearchuk.org/static/trailblazer/images/lung_egfr/tutorial/grid.jpg" alt="" />
         </div>
         <div class="modal-info">
           <div id="tutorialSummary">
@@ -1675,51 +1678,51 @@
   <div class="row-fluid intensityReference">
     <div class="example-list-intensity clearfix">
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity1-01.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity1-01.jpg" alt="" />
         <figcaption class="description non-cancer">Faintly Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity2-05.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity2-05.jpg" alt="" />
         <figcaption class="description orange-cancer">Partially Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity3-09.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity3-09.jpg" alt="" />
         <figcaption class="description cancer">Fully Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity1-02.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity1-02.jpg" alt="" />
         <figcaption class="description non-cancer">Faintly Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity2-06.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity2-06.jpg" alt="" />
         <figcaption class="description orange-cancer">Partially Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity3-10.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity3-10.jpg" alt="" />
         <figcaption class="description cancer">Fully Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity2-08.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity2-08.jpg" alt="" />
         <figcaption class="description orange-cancer">Partially Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity1-03.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity1-03.jpg" alt="" />
         <figcaption class="description non-cancer">Faintly Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity3-12.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity3-12.jpg" alt="" />
         <figcaption class="description cancer">Fully Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity2-07.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity2-07.jpg" alt="" />
         <figcaption class="description orange-cancer">Partially Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity1-04.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity1-04.jpg" alt="" />
         <figcaption class="description non-cancer">Faintly Stained</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="http://citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/reference/lung-egfr-gt-intensity3-11.jpg" alt="" />
+        <img src="http:/static/trailblazer/images/lung_egfr/reference/lung-egfr-gt-intensity3-11.jpg" alt="" />
         <figcaption class="description cancer">Fully Stained</figcaption>
       </figure>
     </div>
@@ -1727,75 +1730,75 @@
   <div class="row-fluid cancerReference">
     <div class="example-list clearfix">
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-1.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-1.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-2.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-2.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-3.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-3.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-4.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-4.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-5.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-5.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-6.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-6.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-7.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-7.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-8.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-8.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-9.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-9.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/cancer-example-10.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/cancer-example-10.jpg" alt="" />
         <figcaption class="description cancer">Cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item last">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/non-cancer-example-1.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/non-cancer-example-1.jpg" alt="" />
         <figcaption class="description non-cancer">Non-cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/non-cancer-example-2.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/non-cancer-example-2.jpg" alt="" />
         <figcaption class="description non-cancer">Non-cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/non-cancer-example-3.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/non-cancer-example-3.jpg" alt="" />
         <figcaption class="description non-cancer">Non-cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/non-cancer-example-4.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/non-cancer-example-4.jpg" alt="" />
         <figcaption class="description non-cancer">Non-cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/non-cancer-example-5.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/non-cancer-example-5.jpg" alt="" />
         <figcaption class="description non-cancer">Non-cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/non-cancer-example-6.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/non-cancer-example-6.jpg" alt="" />
         <figcaption class="description non-cancer">Non-cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/non-cancer-example-7.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/non-cancer-example-7.jpg" alt="" />
         <figcaption class="description non-cancer">Non-cancer Cells</figcaption>
       </figure>
       <figure class="example-list-item">
-        <img src="//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/examples/non-cancer-example-8.jpg" alt="" />
+        <img src="/static/trailblazer/images/lung_egfr/examples/non-cancer-example-8.jpg" alt="" />
         <figcaption class="description non-cancer">Non-cancer Cells</figcaption>
       </figure>
     </div>
@@ -1821,7 +1824,7 @@
 
    var feedbackData = [{
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-18.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-18.jpg",
                  "proportion": "100",
                  "intensity": "3+",
                  "squares": [
@@ -1866,7 +1869,7 @@
        },
       //  {
       //        "info": {
-      //            "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-19.jpg",
+      //            "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-19.jpg",
       //            "proportion": "100",
       //            "intensity": "2+",
       //         "squares": [
@@ -2024,7 +2027,7 @@
       //  },
        {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-24.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-24.jpg",
                  "proportion": "0",
                  "intensity": null,
               "squares": [{
@@ -2181,7 +2184,7 @@
        },
        {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-22.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-22.jpg",
                  "proportion": "100",
                  "intensity": "3+",
                  "squares": [{
@@ -2338,7 +2341,7 @@
        },
        {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-03.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-03.jpg",
                  "proportion": "0",
                  "intensity": null,
                "squares": [{
@@ -2495,7 +2498,7 @@
        },
        {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-11.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-11.jpg",
                  "proportion": "100",
                  "intensity": "3+",
                  "squares": [
@@ -2540,7 +2543,7 @@
        },
       {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-25.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-25.jpg",
                  "proportion": "35",
                  "intensity": "1+",
                  "squares": [
@@ -2585,7 +2588,7 @@
        },
       {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-26.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-26.jpg",
                  "proportion": "75",
                  "intensity": "2+",
                   "squares": [
@@ -2629,7 +2632,7 @@
             }
        },{
        "info": {
-           "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-18.jpg",
+           "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-18.jpg",
            "proportion": "100",
            "intensity": "3+",
            "squares": [
@@ -2674,7 +2677,7 @@
  },
  {
        "info": {
-           "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-24.jpg",
+           "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-24.jpg",
            "proportion": "0",
            "intensity": null,
         "squares": [{
@@ -2831,7 +2834,7 @@
  },
       {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-15.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-15.jpg",
                  "proportion": "50",
                  "intensity": "1+",
                  "squares": [
@@ -2876,7 +2879,7 @@
        },
       {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-27.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-27.jpg",
                  "proportion": "15",
                  "intensity": "2+",
                  "squares": [
@@ -2921,7 +2924,7 @@
        },
       {
              "info": {
-                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/lung_egfr/EGFR-07.jpg",
+                 "imgNumber": "/static/trailblazer/images/lung_egfr/EGFR-07.jpg",
                  "proportion": "0",
                  "intensity": null,
                  "squares": [
@@ -4575,7 +4578,7 @@
 
         // Pass image number into answer
         var imgUrl = task.info.url_b;
-        var result = imgUrl.replace("//citscitools.cancerresearchuk.org/static/img/mvp-01/", "");
+        var result = imgUrl.replace("/static/trailblazer/images/lung_egfr/", "");
 
         // Create the answer object
         var answer = {
@@ -4663,7 +4666,7 @@
 
         // Pass image number into answer
         var imgUrl = task.info.url_b;
-        var result = imgUrl.replace("//citscitools.cancerresearchuk.org/static/img/mvp-01/", "");
+        var result = imgUrl.replace("/static/trailblazer/images/lung_egfr/", "");
 
         var slideSkippedData = {
           skipped: false,
