@@ -168,14 +168,14 @@
 
                 <hr>
                 <!--<p>Please select an image difficulty level:</p>-->
-                <select id="difficulty">
+                <!-- <select id="difficulty">
                     <option value="0" selected>Please select an image difficulty level:</option>
                     <option value="1">1 - Very easy</option>
                     <option value="2">2 - Easy</option>
                     <option value="3">3 - Average</option>
                     <option value="4">4 - Difficult</option>
                     <option value="5">5 - Very difficult</option>
-                </select>
+                </select> -->
 
                 <button class="btn" id="reset">Reset</button>
                 <button class="btn" id="select-all" value="all">Select All</button>
@@ -555,14 +555,14 @@
                     /*
                      * Conditional to check if the image difficulty has been set
                      */
-                    if ($("#difficulty option:selected").val() != 0) {
+                    /* if ($("#difficulty option:selected").val() != 0) { */
                         saveTask(r, task,deferred);
-                        $("#img-difficulty-message").hide();
-                        $("#loading").fadeIn(500);
-
+                       $("#img-difficulty-message").hide();
+                       $("#loading").fadeIn(500);
+                    /*
                     } else {
                         $("#img-difficulty-message").fadeIn(500);
-                    }
+                    } */
                 }
 
 
