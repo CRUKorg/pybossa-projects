@@ -1599,10 +1599,11 @@
         </div>
         <div id="finish" class="alert alert-success" style="display:none">
             <h2><strong>Thank you</strong> for completing the analysis part of Trailblazer!</h2>
+            <!--
             <h2>The final step is to provide some feedback on using the system.</h2>
             <div class="alert-actions" id="give-feedback-link">
                 <a class="btn small" href="">Give feedback</a>
-            </div>
+            </div>-->
         </div>
         <div id="error" class="alert alert-error" style="display:none">
             <h2><strong>Error!</strong> Something went wrong, please contact the site administrators</h2>
@@ -3167,7 +3168,7 @@
                     if (checkProportionValue > 0.00) {
                         $intensitySlider.show();
                         $('.cancerReference').hide();
-                        $('.intensityReference').show();
+                        $('.intensityReference').hide();
                         $proportionSlider.hide();
                         $(this).hide();
                         $nextImageButton.show();
@@ -3189,7 +3190,7 @@
                     $(questions.nextSliderButton).show();
                 } else {
                     $proportionSlider.show();
-                    $('.cancerReference').show();
+                    $('.cancerReference').hide();
                     $('.intensityReference').hide();
                     $intensitySlider.hide();
                     $nextImageButton.hide();
@@ -4346,7 +4347,7 @@
         pybossa.userProgress('mvp-gold-std-lung-pdl1-ihc').done(function (data) {
             checkTask = data.done;
             var currentTask = data.done + 1;
-            $("#tasksCompleted").text(currentTask + " of " + 10);
+            $("#tasksCompleted").text(currentTask + " of " + data.total);
             var pct = Math.round((data.done * 100) / data.total);
             $("#progress").css("width", pct.toString() + "%");
             $("#total").text(data.total);
@@ -4850,7 +4851,7 @@
                 });
 
                 // Resets questions for next slide
-                $('.cancerReference').show();
+                $('.cancerReference').hide();
                 $('.intensityReference').hide();
                 $('.prevSliderBtn').hide();
                 $('.grid-selection__container').show();
@@ -4933,7 +4934,7 @@
             $(this).hide();
             $nextFeedbackStep.show();
             $('.cancerReference').hide();
-            $('.intensityReference').show();
+            $('.intensityReference').hide();
         } else {
             if ($gridContainer.is(':visible')) {
                 if (step === 8) {
@@ -4968,7 +4969,7 @@
             } else if ($proportionContainer.is(':visible')) {
                 $proportionContainer.hide();
                 $('.cancerReference').hide();
-                $('.intensityReference').show();
+                $('.intensityReference').hide();
                 $userFeedbackAreaProportion.hide();
                 $userFeedbackAreaIntensity.show();
                 $(this).hide();
@@ -5193,7 +5194,7 @@
 
         if (step === 7 || step === 8 || step === 9 || step === 10) {
             $('.intensityReference').hide();
-            $('.cancerReference').show();
+            $('.cancerReference').hide();
             $proportionContainer.hide();
             $('.feedback-grid-container__green').hide();
             $('.legend-item__non-cancer').hide();
@@ -5382,7 +5383,7 @@
             $("#finishFeedback").show().addClass("disabled");
             $feedbackNoCancerBtn.show();
             $('.intensityReference').hide();
-            $('.cancerReference').show();
+            $('.cancerReference').hide();
         }
 
         $("#feedbackStep" + step).show();
@@ -5402,7 +5403,9 @@
 
         // State of the page to show to the user
         var page_state = "mechanic";
+        $('.cancerReference').hide();
 
+/*
         // Check if the page should be in show feedback state
         var cookie_feedback = $.cookie(cookie_feedback_name);
         if (cookie_feedback !== null) {
@@ -5419,7 +5422,7 @@
         if (cookie_feedback == "false") {
             page_state = "mechanic";
         }
-
+*/
         // If the feedback or mechanic is showing
         // Init the example images in slick corousel
         //
@@ -5559,7 +5562,7 @@
             $("#feedbackProgressText").text("");
             if (step === 4 || step === 5 || step === 6) {
                 $('.intensityReference').hide();
-                $('.cancerReference').show();
+                $('.cancerReference').hide();
             }
             if (step != feedbackData.length - 1) {
                 showFeedbackStep('next');
