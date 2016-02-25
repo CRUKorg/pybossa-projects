@@ -3058,7 +3058,7 @@
           if (checkProportionValue > 0.00) {
             $intensitySlider.show();
             $('.cancerReference').hide();
-            $('.intensityReference').show();
+            $('.intensityReference').hide();
             $proportionSlider.hide();
             $(this).hide();
             $nextImageButton.show();
@@ -3081,7 +3081,7 @@
           $(questions.nextSliderButton).show();
         } else {
           $proportionSlider.show();
-          $('.cancerReference').show();
+          $('.cancerReference').hide();
           $('.intensityReference').hide();
           $intensitySlider.hide();
           $nextImageButton.hide();
@@ -4756,7 +4756,7 @@
         }
 
         // Resets questions for next slide
-        $('.cancerReference').show();
+        $('.cancerReference').hide();
         $('.intensityReference').hide();
         $('.prevSliderBtn').hide();
         $('.grid-selection__container').show();
@@ -4924,7 +4924,7 @@
       $(this).hide();
       $nextFeedbackStep.show();
       $('.cancerReference').hide();
-      $('.intensityReference').show();
+      $('.intensityReference').hide();
     } else {
       if ($gridContainer.is(':visible')) {
         if (step === 8) {
@@ -4959,7 +4959,7 @@
       } else if ($proportionContainer.is(':visible')) {
         $proportionContainer.hide();
         $('.cancerReference').hide();
-        $('.intensityReference').show();
+        $('.intensityReference').hide();
         $userFeedbackAreaProportion.hide();
         $userFeedbackAreaIntensity.show();
         $(this).hide();
@@ -5184,7 +5184,7 @@
 
     if (step === 7 || step === 8 || step === 9 || step === 10) {
       $('.intensityReference').hide();
-      $('.cancerReference').show();
+      $('.cancerReference').hide();
       $proportionContainer.hide();
       $('.feedback-grid-container__green').hide();
       $('.legend-item__non-cancer').hide();
@@ -5552,7 +5552,7 @@
       $("#feedbackProgressText").text("");
       if (step === 4 || step === 5 || step === 6) {
         $('.intensityReference').hide();
-        $('.cancerReference').show();
+        $('.cancerReference').hide();
       }
       if (step != feedbackData.length - 1) {
         showFeedbackStep('next');
