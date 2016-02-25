@@ -1,5 +1,5 @@
 {
-    "name": "CRUK Trailblazer 2 release 2.0a",
-    "short_name": "tb2-r2.0a",
-    "description": "Release 2.0a of Trailblazer 2 (lung EGFR pathology analysis) - "
+    "name": "CRUK Trailblazer 2 lung PDL1 GS (tutorial images)",
+    "short_name": "mvp-gold-std-lung-pdl1-tutorial",
+    "description": "CRUK Trailblazer 2 lung PDL1 GS (tutorial images)"
 }
