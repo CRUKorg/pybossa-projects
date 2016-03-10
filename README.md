@@ -10,3 +10,14 @@ copy of PyBossa, talking instead to our dev server via the pybossa.js file) and 
 project will be able to committed to be deployed (CI).
 
 TODO: Add description of using this project template here
+
+## Copyright / Licence
+
+Copyright 2016 Cancer Research UK
+
+Source Code License: The GNU Affero General Public License, either version 3 of the License or (at your option) any later version. (See agpl.txt file)
+
+The GNU Affero General Public License is a free, copyleft license for software and other kinds of works, specifically designed to ensure 
+cooperation with the community in the case of network server software.
+
+Documentation is under a Creative Commons Attribution Noncommercial License version 3.
