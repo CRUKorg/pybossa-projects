@@ -4840,9 +4840,9 @@
                 }
                 feedbackText = getValue + ":" + roundValue;
                 if (userAnswerCheck === roundValue) {
-                    feedbackText = "<p>Well done, you matched our experts exactly.</p>"
+                    feedbackText += "<p>Well done, you matched our experts exactly.</p>"
                 } else {
-                    feedbackText = "<p>You didn't match our experts.</p>"
+                    feedbackText += "<p>You didn't match our experts.</p>"
                     if (userAnswerCheck === "3+") {
                         feedbackText += "<p>Our experts thought most of the stained cancer cells had <b>strong</b> staining.</p>";
                     } else if (userAnswerCheck === "2+") {
