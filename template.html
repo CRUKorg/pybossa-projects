@@ -2581,7 +2581,7 @@
             "info": {   /* index 6*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-16.jpg",
                 "proportion": "0",
-                "intensity": "0",
+                "intensity": "1+",
             }
         },
         {
@@ -2616,7 +2616,7 @@
             "info": {   /* index 11*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-18.jpg",
                 "proportion": "0",
-                "intensity": "0",
+                "intensity": "1+",
             }
         }
     ];
@@ -4875,8 +4875,9 @@
             $("#nextFeedbackStep").hide();
             $("#finishFeedback").show().addClass("disabled");
             // $feedbackNoCancerBtn.show();
+            $proportionContainer.show();
             $('.intensityReference').hide();
-            $('.cancerReference').show();
+            // $('.cancerReference').show();
         }
 
         $("#feedbackStep" + step).show();
