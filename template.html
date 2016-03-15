@@ -565,7 +565,6 @@
                     <h1>We have two questions</h1>
                     <h2>Can you estimate the proportion of <strong class="text-error">cancer cells</strong> that are stained?</h2>
                     <h2>We also want to know how intensely stained <strong>most</strong> of the stained cancer cells are.</h2>
-                    <h2>Look at the reference images at the bottom for guidance</h2>
                     <h2>Let’s try with some practice examples. Remember, we are only interested in the cancer cells. You can ignore the non-cancer cells</h2>
                 </div>
             </div>
@@ -1799,7 +1798,7 @@
 
     var feedbackData = [
         {
-            "info": {
+            "info": {   /* index 0*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-08.jpg",
                 "proportion": "25",
                 "intensity": "1+",
@@ -1988,7 +1987,7 @@
             }
         },
         {
-            "info": {
+            "info": {   /* index 1*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-06.jpg",
                 "proportion": "60",
                 "intensity": "1+",
@@ -2177,7 +2176,7 @@
             }
         },
         {
-            "info": {
+            "info": {   /* index 2*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-05.jpg",
                 "proportion": "0",
                 "intensity": null,
@@ -2366,7 +2365,7 @@
             }
         },
         {
-            "info": {
+            "info": {   /* index 3*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-10.jpg",
                 "proportion": "90",
                 "intensity": "3+",
@@ -2555,56 +2554,56 @@
             }
         },
         {
-            "info": {
+            "info": {   /* index 4*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-04.jpg",
                 "proportion": "10",
                 "intensity": "1+",
             }
         },
         {
-            "info": {
+            "info": {   /* index 5*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-12.jpg",
                 "proportion": "90",
                 "intensity": "3+",
             }
         },
         {
-            "info": {
+            "info": {   /* index 6*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-16.jpg",
                 "proportion": "0",
                 "intensity": "0",
             }
         },
         {
-            "info": {
+            "info": {   /* index 7*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-09.jpg",
                 "proportion": "5",
                 "intensity": "1+",
             }
         },
         {
-            "info": {
+            "info": {   /* index 8*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-13.jpg",
                 "proportion": "85",
                 "intensity": "3+",
             }
         },
         {
-            "info": {
+            "info": {   /* index 9*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-02.jpg",
                 "proportion": "60",
                 "intensity": "2+",
             }
         },
         {
-            "info": {
+            "info": {   /* index 10*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-01.jpg",
                 "proportion": "70",
                 "intensity": "1+",
             }
         },
         {
-            "info": {
+            "info": {   /* index 11*/
                 "imgNumber": "//citscitools.cancerresearchuk.org/static/mvp-images/bladder-p53/p53-18.jpg",
                 "proportion": "0",
                 "intensity": "0",
@@ -4577,8 +4576,9 @@
         feedbackNextButton.onclick = function () {
             if ($($targetClass[0]).is(':visible')) {
                 $($targetClass[0]).hide();
-                $($targetClass[1]).show();
+                // $($targetClass[1]).show();
                 $(feedbackPreviousButton).show();
+                $continueBtn.show();
             } else if ($($targetClass[1]).is(':visible')) {
                 $($targetClass[1]).hide();
                 $($targetClass[2]).show();
@@ -4644,7 +4644,7 @@
         $proportionContainer.hide();
 
  //       if (step === 4 || step === 5 || step === 6) {
-        if (step >= 4 && step <= 11) {
+        if (step >= 4 && step < 11) {
             $gridContainer.hide();
 
             $('.text-whats-in-image').hide();
@@ -4859,7 +4859,7 @@
         if (step === lastFeedbackStep - 1) {
             $("#nextFeedbackStep").hide();
             $("#finishFeedback").show().addClass("disabled");
-            $feedbackNoCancerBtn.show();
+            // $feedbackNoCancerBtn.show();
             $('.intensityReference').hide();
             $('.cancerReference').show();
         }
