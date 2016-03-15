@@ -4873,10 +4873,12 @@
 
         if (step === lastFeedbackStep - 1) {
             $("#nextFeedbackStep").hide();
+            $("#nextFeedbackStep").show();
             $("#finishFeedback").show().addClass("disabled");
             // $feedbackNoCancerBtn.show();
             $proportionContainer.show();
             $('.intensityReference').hide();
+            $gridContainer.hide();
             // $('.cancerReference').show();
         }
 
