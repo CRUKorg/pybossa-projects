@@ -4658,10 +4658,21 @@
             $proportionContainer.show();
             $('.progress').hide();
             $intensityContainer.hide();
-            $nextFeedbackQuestion.show();
-            $nextFeedbackStep.hide();
+            // $nextFeedbackQuestion.show();
+            // $nextFeedbackStep.hide();
             $checkMyWorkBtn.show();
-            $('.legend').hide();
+
+            if (step === 6) {
+                // hack to make it not show intensity for image 7 as proportion is zero
+                $nextFeedbackQuestion.hide();
+                $nextFeedbackStep.show();
+            } else {
+                // standard functionality
+                $nextFeedbackQuestion.show();
+                $nextFeedbackStep.hide();
+            }
+
+             $('.legend').hide();
             if (!$('#nextFeedbackQuestion').hasClass('disabled')) {
                 $('#nextFeedbackQuestion').addClass('disabled');
             }
