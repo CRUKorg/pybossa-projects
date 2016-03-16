@@ -4737,7 +4737,7 @@
                 $("#nextFeedbackStep").removeClass("disabled");
                 $("#nextFeedbackStep").addClass("btn-primary");
             }
-            if (totalGridPercentage >= progressBarTargetValue) {
+            if (totalGridPercentage >= progressBarTargetValue || step === 11) {
                 $("#finishFeedback").removeClass("disabled");
                 $("#nextFeedbackStep").addClass("btn-primary");
             }
