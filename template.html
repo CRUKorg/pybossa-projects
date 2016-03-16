@@ -4424,7 +4424,8 @@
     var feedbackNextQuestionButton = document.getElementById('nextFeedbackQuestion');
     feedbackNextQuestionButton.onclick = function () {
         if ($(this).hasClass('disabled')) return;
-        if (step === 4 || step === 5 || step === 6) {
+        // if (step === 4 || step === 5 || step === 6) {
+        if (step >= 4 && step < 11) {
             $userFeedbackAreaProportion.hide();
             $userFeedbackAreaIntensity.show();
             $proportionContainer.hide();
@@ -4467,7 +4468,7 @@
                 }
             } else if ($proportionContainer.is(':visible')) {
                 $proportionContainer.hide();
-                //$('.cancerReference').hide();
+                $('.cancerReference').hide();
                 $('.intensityReference').show();
                 $userFeedbackAreaProportion.hide();
                 $userFeedbackAreaIntensity.show();
@@ -5063,7 +5064,8 @@
             if ($(this).hasClass("disabled")) return;
             $("#feedbackProgress").width("0%");
             $("#feedbackProgressText").text("");
-            if (step === 4 || step === 5 || step === 6) {
+            // if (step === 4 || step === 5 || step === 6) {
+            if (step >= 4 && step < 11) {
                 $('.intensityReference').hide();
                 $('.cancerReference').show();
             }
