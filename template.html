@@ -1208,7 +1208,7 @@
                                         Sample image 4
                                     </h1>
                                     <h2>
-                                        This image is completely dominated by one type of cell.
+                                        This image is almost completely dominated by one type of cell.
                                     </h2>
                                     <h2>
                                         Have a look at the image on the left and see if you can guess which one. Then click on 2 to see the answer.
@@ -1512,7 +1512,7 @@
                         </div>
                     </div>
                     <div class="intensity-slider__container" style="display: none">
-                        <h2>How intense is the staining of cancer cells?</h2>
+                        <h2>Looking only at the cancer cells, how strongly are most of them stained?</h2>
                         <div id="intensity-slider"></div>
                         <div id="intensity-slider-pips">
                             <span class="intensity-slider-pips__weak">Weak</span>
@@ -1783,6 +1783,7 @@
         </div>
     </div>
 </main>
+
 <script type="text/javascript" async="async">
     var hasSeenGuidenceInfo = false;
     var totalGridPercentage = "";
@@ -2144,7 +2145,7 @@
                     },
                     {
                         "column": 5,
-                        "answer": null,
+                        "answer": false,
                         "row": 4
                     },
                     {
@@ -2437,7 +2438,7 @@
                     },
                     {
                         "column": 0,
-                        "answer": null,
+                        "answer": false,
                         "row": 2
                     },
                     {
@@ -4466,7 +4467,7 @@
                 }
             } else if ($proportionContainer.is(':visible')) {
                 $proportionContainer.hide();
-                $('.cancerReference').hide();
+                //$('.cancerReference').hide();
                 $('.intensityReference').show();
                 $userFeedbackAreaProportion.hide();
                 $userFeedbackAreaIntensity.show();
@@ -4595,6 +4596,7 @@
                 return;
             }
         };
+
         var feedbackPreviousButton = document.getElementById('feedbackPrevBtn');
         feedbackPreviousButton.onclick = function () {
             if ($($targetClass[1]).is(':visible')) {
