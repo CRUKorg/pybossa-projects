@@ -4074,7 +4074,8 @@
 
             var lastSlashIdx = imgUrl.lastIndexOf("/");
             var newStr = imgUrl.substr(lastSlashIdx + 1, 50);
-            $(".imgId").html("Image ID: " + "<strong>" + newStr + "</strong>");
+            //  $(".imgId").html("Image ID: " + "<strong>" + newStr + "</strong>");
+            $(".imgId").html("Image ID: " + newStr);
 
 
             // Initalise main mechanic, zoom and modal
